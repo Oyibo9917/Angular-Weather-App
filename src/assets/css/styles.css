@@ -1,0 +1,34 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.day{
+    background-color: #ffffff;
+}
+
+.night{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.weather-desc{
+    font-size: 12px; 
+    padding-left: 5px;
+}
+
+.footer{
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 8px; 
+}
+
+.content{
+    border: 3px solid aqua;
+    border-radius: 20px;
+    padding: 5px;
+}

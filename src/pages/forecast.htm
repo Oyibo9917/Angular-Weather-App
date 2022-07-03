@@ -1,1 +1,39 @@
-{{city}}
+<p>
+    <a href="#!">Back to Search</a>
+</p>
+
+ForeCast for {{country}}
+<hr>
+<div ng-show="spinner">
+    <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+</div>
+
+<div ng-show="!spinner">
+    <div class="row content" ng-class="is_day ? 'day' : 'night' ">
+        <div class="col-md-12">
+            <div class="panel1 panel1-default">
+                <div class="panel1-heading">
+                  <h3 class="panel1-title d-flex">
+                    <div style="margin-right:8px">{{region}}  - </div> 
+                    <div class="d-flex"> 
+                        <div><img src="{{weather_icons}}" alt="{{weather_descriptions}}"></div>
+                        <div class="weather-desc"> {{weather_descriptions}}</div>
+                    </div>
+                  </h3>
+                </div>
+                <div class="panel1-body">
+                    <h3>Time</h3>
+                    <h2 class="title">{{localtime}}</h2>
+                    <h4>Time Zone - <span class="title">{{timezone}}</span></h4>
+                    <h4>Temperature - <span class="title">{{temperature}} &#8451;</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer pt-5">
+        <span>
+            Tools used - Angular Js, Bootstrap, CSS, Weather-API
+        </span>
+    </div>
+</div>

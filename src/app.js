@@ -16,11 +16,6 @@ weatherApp.config(function($routeProvider){
         controller: 'forecastController'
     })
 
-    .when('/forecast/:days',{
-        templateUrl: 'pages/forecast.htm',
-        controller: 'forecastController'
-    })
-
 });
 
 // SERVICES
